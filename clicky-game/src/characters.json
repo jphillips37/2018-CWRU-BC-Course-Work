@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Bowser",
+        "imageUrl": "./images/Bowser.png"
+    },
+    {
+        "id": 2,
+        "name": "Bowser Jr.",
+        "imageUrl": "./images/BowserJr.png"
+    },
+    {
+        "id": 3,
+        "name": "Daisy",
+        "imageUrl": "./images/Daisy.png"
+    },
+    {
+        "id": 4,
+        "name": "Diddy Kong",
+        "imageUrl": "./images/DiddyKong.png"
+    },
+    {
+        "id": 5,
+        "name": "Donkey Kong",
+        "imageUrl": "./images/DK.png"
+    },
+    {
+        "id": 6,
+        "name": "Luigi",
+        "imageUrl": "./images/Luigi.png"
+    },
+    {
+        "id": 7,
+        "name": "Mario",
+        "imageUrl": "./images/Mario.png"
+    },
+    {
+        "id": 8,
+        "name": "Peach",
+        "imageUrl": "./images/Peach.png"
+    },
+    {
+        "id": 9,
+        "name": "Rosalina",
+        "imageUrl": "./images/Rosalina.png"
+    },
+    {
+        "id": 10,
+        "name": "Waluigi",
+        "imageUrl": "./images/Waluigi.png"
+    },
+    {
+        "id": 11,
+        "name": "Wario",
+        "imageUrl": "./images/Wario.png"
+    },
+    {
+        "id": 12,
+        "name": "Yoshi",
+        "imageUrl": "./images/Yoshi.png"
+    }
+]

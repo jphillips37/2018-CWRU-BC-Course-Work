@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Calculator</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">jQuery Calculator</h1>
+    <h3 class="text-center">Perform basic mathematic operations using the power of jQuery!</h3>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+      <!-- Calculator Card -->
+      <div class="col-lg-4">
+        <div class="card">
+          <h3 class="card-header">Calculator</h3>
+
+          <div class="card-body">
+            <button id="button-1" class="btn btn-primary number" value="1"><h1>1</h1></button>
+            <button id="button-2" class="btn btn-primary number" value="2"><h1>2</h1></button>
+            <button id="button-3" class="btn btn-primary number" value="3"><h1>3</h1></button>
+            <button id="button-plus" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
+            <br><br>
+            <button id="button-4" class="btn btn-primary number" value="4"><h1>4</h1></button>
+            <button id="button-5" class="btn btn-primary number" value="5"><h1>5</h1></button>
+            <button id="button-6" class="btn btn-primary number" value="6"><h1>6</h1></button>
+            <button id="button-minus" class="btn btn-danger operator" value="minus"><h1>&minus;</h1></button>
+            <br><br>
+            <button id="button-7" class="btn btn-primary number" value="7"><h1>7</h1></button>
+            <button id="button-8" class="btn btn-primary number" value="8"><h1>8</h1></button>
+            <button id="button-9" class="btn btn-primary number" value="9"><h1>9</h1></button>
+            <button id="button-multiply" class="btn btn-danger operator" value="times"><h1>&times;</h1></button>
+            <br><br>
+            <button id="button-0" class="btn btn-primary number" value="0"><h1>0</h1></button>
+            <button id="button-divide" class="btn btn-danger operator" value="divide"><h1>&divide;</h1></button>
+            <button id="button-power" class="btn btn-danger operator" value="power"><h1>^</h1></button>
+            <button id="button-equal" class="btn btn-success equal" value="equals"><h1>=</h1></button>
+            <br><br>
+            <button id="button-clear" class="btn btn-dark clear" value="clear"><h1>clear</h1></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result Card -->
+      <div class="col-lg-6">
+        <div class="card">
+          <h3 class="card-header">Result</h3>
+          <div class="card-body">
+            <h1 id="first-number"></h1>
+            <h1 id="operator"></h1>
+            <h1 id="second-number"></h1>
+            <hr>
+            <h1 id="result"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Your code here...
+  var var1 = "";
+  var var2 = "";
+  var total = "";
+  var oper;
+
+  function addVar(x, y) {
+    var total = parseInt(x) + parseInt(y);  
+    return total;
+  }
+
+  function subVar(x, y) {
+    var total = parseInt(x) - parseInt(y);
+    return total;
+  }
+
+  function multVar(x, y) {
+    var total = parseInt(x) * parseInt(y);
+    return total;
+  }
+
+  function divVar(x, y) {
+    var total = parseInt(x) / parseInt(y);
+    return total;
+  }
+
+  // add function to raise to power
+
+  $(".number").on("click", function() {
+    
+    if (oper == null) {
+      var1 = var1 + $(this).attr("value");
+      console.log(var1);
+      $("#first-number").text(var1);
+    }
+    else {
+      var2 = var2 + $(this).attr("value");
+      $("#second-number").text(var2);
+    }
+  });
+
+  $(".operator").on("click", function() {  //operator does not update on webpage, but correct operation is performed
+    function switchOperator(value){
+      
+    }
+    if (var1 == null) {  // if a first number has not been define, don't do anything
+
+    }
+    else if (oper == null) { // if a first variable has been defined, but an operator has not, then define the operator
+      oper = $(this).attr("value");
+      console.log(oper)
+      switch (oper) {
+        case "plus":
+          $("#operator").text("+");
+          break;
+        case "minus":
+          $("#operator").text("-");
+          break;
+        case "times":
+          $("#operator").text("X");
+          break;
+        case "divide":
+          $("#operator").text("÷");
+          break;
+        case "power":
+          $("#operator").text("^");
+          break;        
+      }
+      // $("#operator").text(""); 
+    }
+    else if (oper != null && var2 == null) {
+
+    }
+    else if (oper != null && var2 != null) {
+      switch (oper) {
+        case "plus": 
+          var1 = addVar(var1, var2);
+          $("#first-number").text(var1);
+          $("#second-number").text("");
+          var2 = "";
+          oper = $(this).attr("value");
+          break;
+        case "minus":
+          var1 = subVar(var1, var2);
+          $("#first-number").text(var1);
+          $("#second-number").text("");
+          var2 = "";
+          oper = $(this).attr("value");
+          break;
+        case "times":
+          var1 = multVar(var1, var2);
+          $("#first-number").text(var1);
+          $("#second-number").text("");
+          var2 = "";
+          oper = $(this).attr("value");
+          break;
+        case "divide":
+          var1 = divVar(var1, var2);
+          $("#first-number").text(var1);
+          $("#second-number").text("");
+          var2 = "";
+          oper = $(this).attr("value");
+          break;
+          // add power case here
+      }
+    }
+  });
+  $(".clear").on("click", function(){
+   console.log("Clear Clicked");
+   var cleared = $(this).attr("value");
+   clear = cleared;
+   console.log(clear);
+   $("#operator").html("");
+   $("#result").html("");
+   $("#first-number").html("");
+   $("#second-number").html("");
+   var1 = "";
+   var2 = "";
+   total = 0;
+   oper = null;
+ });
+});
+
+</script>
+
+</body>
+</html>
