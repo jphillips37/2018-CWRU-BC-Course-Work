@@ -1,0 +1,33 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1,h2 {
+    color: red;
+}
+p.hp {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+p.name {
+    text-align: center;
+}
+img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: white; */
+    position: relative;
+    bottom: 20px;
+}
+.pic {
+    width: 120px;
+    height: 140px;
+    background-color: white;
+    float: left;
+    margin: 0 10px;
+}

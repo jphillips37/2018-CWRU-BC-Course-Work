@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <title> Star Wars RPG Game</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header class="nav justify-content-end">
+        <h1>Star Wars RPG!</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="pic start" id="startYoda" value="Yoda">
+                    <p class="name" id="yoda">Yoda</p>
+                    <img src="assets/images/yoda.jpg">
+                    <p class="hp" id="startYodaHp">75</p>
+                </div>
+                <div class="pic start" id="startFett" value="Fett">
+                    <p class="name" id="fett">Boba Fett</p>
+                    <img src="assets/images/fett.jpg">
+                    <p class="hp" id="startFettHp">95</p>
+                </div>
+                <div class="pic start" id="startVader" value="Vader">
+                    <p class="name" id="vader">Darth Vader</p>
+                    <img src="assets/images/vader.jpg">
+                    <p class="hp" id="startVaderHp">110</p>
+                </div>
+                <div class="pic start" id="startMaul" value="Maul">
+                    <p class="name" id="maul">Darth Maul</p>
+                    <img src="assets/images/maul.jpg">
+                    <p class="hp" id="startMaulHp">105</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                    <h2>Your Character</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="pic attacker" id="attackYoda" value="Yoda">
+                    <p class="name" id="yoda">Yoda</p>
+                    <img src="assets/images/yoda.jpg">
+                    <p class="hp" id="attackYodaHp">75</p>
+                </div>
+                <div class="pic attacker" id="attackFett" value="Fett">
+                    <p class="name" id="fett">Boba Fett</p>
+                    <img src="assets/images/fett.jpg">
+                    <p class="hp" id="attackFettHp">95</p>
+                </div>
+                <div class="pic attacker" id="attackVader" value="Vader">
+                    <p class="name" id="vader">Darth Vader</p>
+                    <img src="assets/images/vader.jpg">
+                    <p class="hp" id="attackVaderHp">110</p>
+                </div>
+                <div class="pic attacker" id="attackMaul" value="Maul">
+                    <p class="name" id="maul">Darth Maul</p>
+                    <img src="assets/images/maul.jpg">
+                    <p class="hp" id="attackMaulHp">105</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2>Enemies Available to Attack</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="pic enemies" id="enemyYoda" value="Yoda">
+                    <p class="name" id="yoda">Yoda</p>
+                    <img src="assets/images/yoda.jpg">
+                    <p class="hp" id="enemyYodaHp">75</p>
+                </div>
+                <div class="pic enemies" id="enemyFett" value="Fett">
+                    <p class="name" id="fett">Boba Fett</p>
+                    <img src="assets/images/fett.jpg">
+                    <p class="hp" id="enemyFettHp">95</p>
+                </div>
+                <div class="pic enemies" id="enemyVader" value="Vader">
+                    <p class="name" id="vader">Darth Vader</p>
+                    <img src="assets/images/vader.jpg">
+                    <p class="hp" id="enemyVaderHp">110</p>
+                </div>
+                <div class="pic enemies" id="enemyMaul" value="Maul">
+                    <p class="name" id="maul">Darth Maul</p>
+                    <img src="assets/images/maul.jpg">
+                    <p class="hp" id="enemyMaulHp">105</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2>Fight Section</h2> 
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-danger">Attack!</button>
+
+        <div class="row">
+            <div class="col">
+                <h2>Defender</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="pic defender" id="defenderYoda" value="Yoda">
+                    <p class="name" id="yoda">Yoda</p>
+                    <img src="assets/images/yoda.jpg">
+                    <p class="hp" id="defenderYodaHp">75</p>
+                </div>
+                <div class="pic defender" id="defenderFett" value="Fett">
+                    <p class="name" id="fett">Boba Fett</p>
+                    <img src="assets/images/fett.jpg">
+                    <p class="hp" id="defenderFettHp">95</p>
+                </div>
+                <div class="pic defender" id="defenderVader" value="Vader">
+                    <p class="name" id="vader">Darth Vader</p>
+                    <img src="assets/images/vader.jpg">
+                    <p class="hp" id="defenderVaderHp">110</p>
+                </div>
+                <div class="pic defender" id="defenderMaul" value="Maul">
+                    <p class="name" id="maul">Darth Maul</p>
+                    <img src="assets/images/maul.jpg">
+                    <p class="hp" id="defenderMaulHp">105</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class = "row">
+            <button type="button" class="btn btn-secondary">Reset</button>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/swgame.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
