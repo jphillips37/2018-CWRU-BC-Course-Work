@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS-Multiplayer</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"> <!-- Bootstrap Link -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/sytle.css"> <!-- CSS Link -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- JQuery Link -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script> <!-- Firebase Link -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light mb-2">
+        <span class="navbar-text">
+            <h1>Rock Paper Scissors - Multiplayer</h1>
+        </span>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col text-center">
+                <div class="mb-2 text-center">
+                    <input type="text" id="userName" placeholder="Name...">
+                    <button id="joinBtn" type="submit" class="mb-2">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col">
+                <div class="rps-box" id="player-1">
+                    <h2 id="player-1-name">Waiting for Player 1</h2>
+                    <div class="col RPS">
+                        <h4 id="rock1">Rock</h4>
+                        <h4 id="paper1">Paper</h4>
+                        <h4 id="scissors1">Scissors</h4>
+                    </div>
+                    <div class="row wins-losses">
+                        <div class="col">
+                            <p id="wins1">Wins: 0</p>
+                        </div>
+                        <div class="col">
+                            <p id="losses1">Losses: 0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="rps-box" id="game-play">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="rps-box" id="player-2">
+                    <h2 id="player-2-name">Waiting for Player 2</h2>
+                    <div class="col RPS">
+                        <h4 id="rock2">Rock</h4>
+                        <h4 id="paper2">Paper</h4>
+                        <h4 id="scissors2">Scissors</h4>
+                    </div>
+                    <div class="row wins-losses">
+                        <div class="col">
+                            <p id="wins2">Wins: 0</p>
+                        </div>
+                        <div class="col">
+                            <p id="losses2">Losses: 0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <textarea rows="10" cols="100"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" size="75">
+                <button type="button" id="message-btn">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/javascript/app.js"></script>
+
+</html>

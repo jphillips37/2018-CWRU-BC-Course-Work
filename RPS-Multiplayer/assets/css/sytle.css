@@ -1,0 +1,18 @@
+.rps-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    border-style: solid;
+    border-width: 5px;
+    position: relative;
+}
+.wins-losses {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+}
+.RPS {
+    padding: 10%;
+}

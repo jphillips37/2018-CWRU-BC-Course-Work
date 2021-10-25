@@ -1,0 +1,24 @@
+{
+  "name": "Node_Word_Guess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^6.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jphillips37/Node_Word_Guess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jphillips37/Node_Word_Guess/issues"
+  },
+  "homepage": "https://github.com/jphillips37/Node_Word_Guess#readme"
+}

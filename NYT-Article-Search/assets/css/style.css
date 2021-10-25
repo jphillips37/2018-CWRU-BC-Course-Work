@@ -1,0 +1,16 @@
+.jumbotron {
+    text-align: center;
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+}
+.card-body {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+}
+button {
+    margin: 5px;
+}
